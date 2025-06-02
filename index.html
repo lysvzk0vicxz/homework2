@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malowanie Domu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="toolbar">
+    <label for="colorPicker">Kolor:</label>
+    <input type="color" id="colorPicker" />
+
+    <label for="brushSize">Grubość:</label>
+    <input type="range" id="brushSize" min="1" max="50" value="10" />
+
+    <button id="undoButton">↶ Cofnij</button>
+  </div>
+
+  <div class="canvas-wrapper">
+    <canvas id="wallCanvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
